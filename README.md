@@ -25,8 +25,8 @@ Surprise Housing dataset
 
 
 ## Conclusions
-Ridge R2 Score (Test) ---> 0.900895
-Lasso  R2 Score (Test) ----> 0.905213
+- Ridge R2 Score (Test) ---> 0.900895
+- Lasso  R2 Score (Test) ----> 0.905213
 
 R2 score of Lasso Regression for test data is slightly higher(to a hundredth decimal) than Ridge regression so let's analyze Lasso coefficients for our model
 
@@ -34,12 +34,13 @@ Looking at coefficients we got for Lasso Regression the variables that are signi
 
 - LotArea: Lot size in square feet 
 - OverallQual: Rates the overall material and finish of the house
-- OverallCond: Rates the overall condition of the house
 - YearBuilt: Original construction da
 - BsmtFinSF1: Type 1 finished square feette
 - TotalBsmtSF: Total square feet of basement area
 - GrLivArea: Above grade (ground) living area square feet
 - GarageCars: Size of garage in car capacity
+
+> Note : OverallQuality and OverAllCondition are highly correlated hence not considering both as important predictors
 
 ## Technologies Used
 - sklearn
