@@ -1,5 +1,5 @@
-# Project Name
-> Outline a brief description of your project.
+# House Pricing Assignment (Advance Regression)
+> build a regression model using regularisation in order to predict the actual value of the prospective properties and decide whether to invest in them or not.
 
 
 ## Table of Contents
@@ -8,45 +8,44 @@
 * [Conclusions](#conclusions)
 * [Acknowledgements](#acknowledgements)
 
-<!-- You can include any other section that is pertinent to your problem -->
 
 ## General Information
-- Provide general information about your project here.
-- What is the background of your project?
-- What is the business probem that your project is trying to solve?
-- What is the dataset that is being used?
+> What is the background of your project?
 
-<!-- You don't have to answer all the questions - just the ones relevant to your project. -->
+Surprise Housing uses data analytics to purchase houses at a price below their actual values and flip them on at a higher price. So build a regression model using regularisation in order to predict the actual value of the prospective properties and decide whether to invest in them or not.
+Specifically, The company is looking at prospective properties to buy to enter the Australian market.
+
+> What is the business probem that your project is trying to solve?
+
+The company wants to know:Which variables are significant in predicting the price of a house and how well those variables describe the price of a house.
+
+> What is the dataset that is being used?
+
+Surprise Housing dataset
+
 
 ## Conclusions
-- Conclusion 1 from the analysis
-- Conclusion 2 from the analysis
-- Conclusion 3 from the analysis
-- Conclusion 4 from the analysis
+Ridge R2 Score (Test) ---> 0.900895
+Lasso  R2 Score (Test) ----> 0.905213
 
-<!-- You don't have to answer all the questions - just the ones relevant to your project. -->
+R2 score of Lasso Regression for test data is slightly higher(to a hundredth decimal) than Ridge regression so let's analyze Lasso coefficients for our model
 
+Looking at coefficients we got for Lasso Regression the variables that are significant in predicting the price of a house are as follows:
+
+- LotArea: Lot size in square feet 
+- OverallQual: Rates the overall material and finish of the house
+- OverallCond: Rates the overall condition of the house
+- YearBuilt: Original construction da
+- BsmtFinSF1: Type 1 finished square feette
+- TotalBsmtSF: Total square feet of basement area
+- GrLivArea: Above grade (ground) living area square feet
+- GarageCars: Size of garage in car capacity
 
 ## Technologies Used
-- library - version 1.0
-- library - version 2.0
-- library - version 3.0
-
-<!-- As the libraries versions keep on changing, it is recommended to mention the version of library used in this project -->
-
-## Acknowledgements
-Give credit here.
-- This project was inspired by...
-- References if any...
-- This project was based on [this tutorial](https://www.example.com).
+- sklearn
+- matplotlib
+- seaborn
 
 
 ## Contact
-Created by [@githubusername] - feel free to contact me!
-
-
-<!-- Optional -->
-<!-- ## License -->
-<!-- This project is open source and available under the [... License](). -->
-
-<!-- You don't have to include all sections - just the one's relevant to your project -->
+Created by [https://github.com/Mahalakshmi-Totad] - feel free to contact me!
